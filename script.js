@@ -1,9 +1,12 @@
 // function that will randomly return 'Rock', 'Paper', or 'Scissors'
+let computerScore = 0;
+let playerScore = 0;
+
 function computerPlay(){
-    const randInt = Math.floor(Math.random()*3) + 1
-    if (randInt === 1){
+    const computerSelection = Math.floor(Math.random()*3);
+    if (computerSelection === 1){
         return "rock";
-    } else if (randInt === 2){
+    } else if (computerSelection === 2){
         return "paper";
     } else{
         return "scissors";
@@ -14,11 +17,9 @@ function computerPlay(){
 function playRound(playerSelection, computerSelection){
     console.log('Computer: ' + computerSelection);
     console.log('Player: ' + playerSelection);
-    if (computerSelection === 'rock' && playerSelection === 'rock'){
-        return 'It\'s a tie!';
-    } else if (computerSelection === 'paper' && playerSelection === 'paper'){
-        return 'It\'s a tie!';
-    } else if (computerSelection === 'scissors' && playerSelection === 'scissors'){
+    if ((computerSelection === 'rock' && playerSelection === 'rock') || 
+        (computerSelection === 'paper' && playerSelection === 'paper') || 
+        (computerSelection === 'scissors' && playerSelection === 'scissors')){
         return 'It\'s a tie!';
     } else if (computerSelection === 'rock' && playerSelection === 'paper'){
         return 'You win! Paper beats rock!';
