@@ -36,6 +36,8 @@ function playRound(playerSelection, computerSelection){
 function scoreKeeper(){    
     if (computerScore < playerScore){
         return 'You win!';
+    } else if (computerScore === playerScore){
+        return 'Tied game!';
     } else {
         return 'Computer wins!';
     }
@@ -49,9 +51,10 @@ function game(){
     for (let i = 0; i < 5; i++){
         console.log('Round: ' + roundCounter);
         console.log(playRound(prompt('Round ' + roundCounter + ': Rock, Paper, or Scissors?'),computerPlay()));
+        console.log(''); // ******* For readability. TO BE DELETED WHEN THE GUI IS BUILT *******
         roundCounter ++;
     }
     console.log('Computer\'s final score: ' + computerScore);
-    console.log('Your final score: ' + playerScore)
-    
+    console.log('Your final score: ' + playerScore);
+    console.log(scoreKeeper());
 }
