@@ -21,25 +21,37 @@ function playRound(playerSelection, computerSelection){
         (computerSelection === 'paper' && playerSelection === 'paper') || 
         (computerSelection === 'scissors' && playerSelection === 'scissors')){
         return 'It\'s a tie!';
-    } else if (computerSelection === 'rock' && playerSelection === 'paper'){
-        return 'You win! Paper beats rock!';
-    } else if (computerSelection === 'rock' && playerSelection === 'scissors'){
-        return 'You lose! Rock beats scissors!'
-    } else if (computerSelection === 'paper' && playerSelection === 'rock'){
-        return 'You lose! Paper beats rock!'
-    } else if (computerSelection === 'paper' && playerSelection === 'scissors'){
-        return 'You win! Scissors beats paper!'
-    } else if (computerSelection === 'scissors' && playerSelection === 'rock'){
-        return 'You win! Rock beats scissors!'
-    } else if (computerSelection === 'scissors' && playerSelection === 'paper'){
-        return 'You lose! Scissors beats paper!'
+    } else if ((computerSelection === 'rock' && playerSelection === 'paper') || 
+        (computerSelection === 'paper' && playerSelection === 'scissors') || 
+        (computerSelection === 'scissors' && playerSelection === 'rock')){
+        playerScore ++;
+        return 'Your point!';
+    } else {
+        computerScore ++;
+        return 'Computer\'s point!';
+    }
+}
+
+// Function that keeps score
+function scoreKeeper(){    
+    if (computerScore < playerScore){
+        return 'You win!';
+    } else {
+        return 'Computer wins!';
     }
 }
 
 // Function that calls playRound to play a 5 round game 
 function game(){
+    computerScore = 0;
+    playerScore = 0;
+    let roundCounter = 1;
     for (let i = 0; i < 5; i++){
-        console.log(playRound(prompt("Rock, Paper, or Scissors?"),computerPlay()))
-        
+        console.log('Round: ' + roundCounter);
+        console.log(playRound(prompt('Round ' + roundCounter + ': Rock, Paper, or Scissors?'),computerPlay()));
+        roundCounter ++;
     }
+    console.log('Computer\'s final score: ' + computerScore);
+    console.log('Your final score: ' + playerScore)
+    
 }
