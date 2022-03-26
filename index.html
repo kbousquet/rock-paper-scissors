@@ -5,12 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Let's play Rock Paper Scissors!</h1>
-    <p>Open your browser's console then click "Ready!" play.</p>
-    <input type="button" value="Ready!" onclick="game()">
-    <input type="button" value="Clear console" onclick="console.clear()">
+    <header class="gameHeader">
+        <h1>Rock Paper Scissors</h1>
+        <p>Will Mankind triumph over the Machines? First to get 5 points wins...</p>
+        <p>Make your choice:</p>
+    </header>
+    
+    <main class="main-content">
+
+        <div id = "playerButtons">
+            <button class="rock-button choice-button"><img src="images/rock.png" style="height:150px"></button>    
+            <button class="paper-button choice-button"><img src="images/paper.png" style="height:150px"></button>
+            <button class="scissors-button choice-button"><img src="images/scissors.png" style="height:150px"></button>
+                
+        </div>
+
+        <div class="game-output">
+            <div class="computer-play-div">
+              <p class="computer-title">Computer's Choice</p>
+              <img id="computer-icon" src="images/computer.png" style="height:150px">
+              
+            </div>
+            <div class="game-results">
+              <p class="round">Round: 0</p>
+              <p class="points">Your Points: 0 ︱ Computer's Points: 0</p>
+              <p class="result-text">Result Area: Empty</p>
+            </div>
+          </div>
+
+          <div class="game-end-div">
+            <p class="game-end-text"></p>
+            <button class="play-again">Play Again!</button>
+          </div>
+
+    </main>
+    
+    <footer>
+      <p>⚜ Created by <a href="https://github.com/kbousquet">kbousquet</a> ⚜</p>
+      <p>Hand Icons by <a href="https://thenounproject.com/cristiano.zoucas/">Cristiano Zoucas</a></p>
+      <p>Computer Icon by <a href="https://thenounproject.com/akagami.telu23/">Abdul Latif</a></p>
+    </footer>
+    
+    
+    
 </body>
 </html>
