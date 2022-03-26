@@ -39,7 +39,7 @@ function playRound(playerSelection, computerSelection){
 
     switch (true){
         case (computerSelection === playerSelection):
-            resultText.innerText = `You both chose ${playerSelection}, no point was lost.`;
+            resultText.innerText = `You both chose ${playerSelection}, no point was gained.`;
             break;
         case (computerSelection === 'rock' && playerSelection === 'paper'):
         case (computerSelection === 'paper' && playerSelection === 'scissors'):
