@@ -12,9 +12,7 @@ This is one of my first **HTML/CSS/JS** projects. Click [here](https://kbousquet
 **The benefits I got from this stage:**
 * Deepened understanding of eventListeners.
 * Learned how to use fonts from the web using Google Fonts.
-* .
-* .
-* .
+* More practice with using HTML, CSS, & JavaScript together.
 
 Hand Icons by [Cristiano Zoucas](https://thenounproject.com/cristiano.zoucas/).
 
