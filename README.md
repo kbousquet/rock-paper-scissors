@@ -11,7 +11,7 @@ This is one of my first **HTML/CSS/JS** projects. Click [here](https://kbousquet
 ### Second stage | Game with added UI
 **The benefits I got from this stage:**
 * Deepened understanding of eventListeners.
-* .
+* Learned how to use fonts from the web using Google Fonts.
 * .
 * .
 * .
