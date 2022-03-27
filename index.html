@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <header class="gameHeader">
-        <h1>Rock Paper Scissors</h1>
-        <p>Will Mankind triumph over the Machines? First to get 5 points wins...</p>
-        <p>Make your choice:</p>
+    <header>
+        <h1 class="header-text">Rock Paper Scissors</h1>
+        <p class="header-text">Will Mankind triumph over the Machines? First to get 5 points wins...</p>
+        
     </header>
     
     <main class="main-content">
-
+      <p>Make your choice:</p>  
         <div id = "playerButtons">
             <button class="rock-button choice-button"><img src="images/rock.png" style="height:150px"></button>    
             <button class="paper-button choice-button"><img src="images/paper.png" style="height:150px"></button>
@@ -26,19 +30,19 @@
 
         <div class="game-output">
             <div class="computer-play-div">
-              <p class="computer-title">Computer's Choice</p>
+              <p class="computer-title">Computer's Choice:</p>
               <img id="computer-icon" src="images/computer.png" style="height:150px">
               
             </div>
             <div class="game-results">
-              <p class="round">Round: 0</p>
+              <h2 class="round">Round: 0</h2>
               <p class="points">Your Points: 0 ︱ Computer's Points: 0</p>
-              <p class="result-text">Result Area: Empty</p>
+              <p class="result-text"></p>
             </div>
           </div>
 
           <div class="game-end-div">
-            <p class="game-end-text"></p>
+            <h2 class="game-end-text"></h2>
             <button class="play-again">Play Again!</button>
           </div>
 
@@ -46,8 +50,6 @@
     
     <footer>
       <p>⚜ Created by <a href="https://github.com/kbousquet">kbousquet</a> ⚜</p>
-      <p>Hand Icons by <a href="https://thenounproject.com/cristiano.zoucas/">Cristiano Zoucas</a></p>
-      <p>Computer Icon by <a href="https://thenounproject.com/akagami.telu23/">Abdul Latif</a></p>
     </footer>
     
     
