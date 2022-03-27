@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    background-color: rgb(60, 64, 73);
+    background-color: #1F2937;
     color:white;
     display:flex;
     flex-direction:column;
@@ -51,12 +51,16 @@ h1{
 
 .choice-button{
     background-color: white;
-    border:hidden;
+    border:4px solid white;
     border-radius:5px;
 }
 
 .choice-button:hover{
     border: 4px solid #636363;
+}
+
+.choice-button:disabled{
+    border:hidden;
 }
 
 .game-results{
@@ -72,7 +76,7 @@ h1{
 footer{
     width:100%;
     height:75px;
-    background-color:#1F2937;
+    background-color:rgb(60, 64, 73);
     display:flex;
     justify-content: center;
     align-items: center;
