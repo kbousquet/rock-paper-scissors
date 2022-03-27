@@ -16,6 +16,6 @@ This is one of my first **HTML/CSS/JS** projects. Click [here](https://kbousquet
 * .
 * .
 
-Hand Icons by <a href="https://thenounproject.com/cristiano.zoucas/">Cristiano Zoucas.
-  
-Computer Icon by <a href="https://thenounproject.com/akagami.telu23/">Abdul Latif.
+Hand Icons by [Cristiano Zoucas](https://thenounproject.com/cristiano.zoucas/).
+
+Computer Icon by [Abdul Latif](https://thenounproject.com/akagami.telu23/).
