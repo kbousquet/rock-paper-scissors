@@ -14,6 +14,8 @@ This is my first **JS** project. Click [here](https://kbousquet.github.io/rock-p
 * Learned how to use fonts from the web using Google Fonts.
 * More practice with using HTML, CSS, & JavaScript together.
 
+![image](https://github.com/kbousquet/rock-paper-scissors/assets/72675497/ef26365f-0b60-4d95-bbbf-f50b6526393c)
+
 Hand Icons by [Cristiano Zoucas](https://thenounproject.com/cristiano.zoucas/).
 
 Computer Icon by [Abdul Latif](https://thenounproject.com/akagami.telu23/).
